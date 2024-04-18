@@ -1,0 +1,91 @@
+@font-face {
+    font-family:"Aubrey";
+    src: url(Fontes/AUBREY1__.TTF);
+}
+@font-face {
+    font-family:"London";
+    src: url(Fontes/LondonMM.ttf);
+}
+
+:root {
+    --azul-gamiai: #22185F;
+    --roxo-gamiai: #24054F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+p
+.banner {
+    height: 100vh;
+
+
+    background-repeat: no-repeat;
+    background-position: 165% 40%;
+}
+
+header {
+    height: 165px;
+
+}
+header div.container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 290px;
+}
+
+.menu {
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: #0095ff;
+
+    font-family: "Aubrey";
+    font-size: 23px;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a:hover {
+    text-decoration-color: steelblue;
+}
+
+.conteudo-banner {
+    height: calc(100vh - 280px);
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-banner p {
+    color: rgb(0, 0, 0);
+
+    font-family: "Aubrey";
+    font-size: 32px;
+}
+
