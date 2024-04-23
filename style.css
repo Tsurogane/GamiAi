@@ -8,9 +8,15 @@
     src: url(Fontes/AUBREY1__.TTF);
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url(Fontes/Roboto-Condensed.ttf);
+}
+
 :root {
     --roxo-gamiai: #24054F;
     --azul-gamiai: #22185F;
+    --branco-gamiai: #000000;
 }
 
 * {
@@ -33,7 +39,7 @@ html {
 .banner {
     height: 100vh;
 
-    background-image: linear-gradient(90deg, rgba(36, 5, 79, 1) 0%, rgba(36, 5, 79, 0.8) 100%), url(img/image\ 1.png);
+    background-image: linear-gradient(90deg, rgba(36, 5, 79, 1) 20%, rgba(36, 5, 79, 0.8) 100%), url(img/image\ 1.png);
     background-repeat: no-repeat;
     background-position: 165% 40%;
 }
@@ -65,7 +71,7 @@ header img {
     color: #00a6ff;
 
     font-family: "LondonMN";
-    font-size: 20px;
+    font-size: 26px;
 
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
@@ -84,7 +90,28 @@ header img {
     align-items: center;
 }
 
+#sobre {
+    height: 800px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    text-align: center;
+    padding: 100px 25%;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 24px;
+}
+
+#sobre p {
+    font-family: 'LondonMN';
+    font-size: 24px;
+
+    text-align: left;
+}
 
 #cases {
     text-align: center;
@@ -114,7 +141,7 @@ header img {
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--roxo-gamifica);
+    background-color: var(--azul-gamiai);
 
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -135,11 +162,11 @@ header img {
     text-align: left;
 
     font-family: "LondonMN";
-    font-size: 16px;
+    font-size: 20px;
 
     padding: 7%;
 
-    color: white;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -152,9 +179,9 @@ header img {
     border: none;
     border-radius: 4px;
 
-    color: white;
+    color: rgb(0, 217, 255);
 
-    font-family: "Monteserrat";
+    font-family: "LondonMN";
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
@@ -163,25 +190,177 @@ header img {
 }
 
 .card button:hover {
-    background-color: #0004ff;
-}
-
-#portfolio {
-    height: 250px;
-
-    margin-bottom: 120px;
-
-    background-image: url(img/bonecos.png);
-    background-size: contain;
-
-    background-repeat: repeat-x;
-
-    background-attachment: fixed;
-
-    position: relative;
+    background-color: #300886;
 }
 
 .card p {
     text-decoration-color: black;
 }
 
+#portfolio {
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+    padding: 100px 8%;
+}
+
+#portfolio p {
+    font-family: "LondonMN";
+    font-size: 28px;
+}
+
+
+
+#portfolio button {
+    width: 10%;
+    height: 40px;
+
+    background-color: var(--roxo-gamiai);
+
+    border: none;
+    border-radius: 4px;
+
+    color: rgb(0, 217, 255);
+
+    font-family: "LondonMN";
+    font-size: 22px;
+    font-weight: 600;
+
+    transition: backgroud-color 500ms;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1000px;
+}
+
+#portfolio button:hover {
+    background-color: #300886;
+}
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato h2 {
+    margin-bottom: 70px;
+}
+
+#contato form {
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 80px;
+
+    background-color: var(--azul-gamiai);
+
+    color: white;
+    font-family: "LondonMN";
+}
+
+#contato form label {
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+    margin-bottom: 50px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo input {
+    height: 40px;
+
+    color: white;
+    background-color: #351868;
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    text-indent: 10px;
+
+    font-family: "LondonMN";
+    font-size: 17px;
+}
+
+.campo-textarea {
+    width: 60%;
+
+    margin-bottom: 30px;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.campo-textarea textarea {
+    color: white;
+    background-color: #351868;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px;
+
+    font-family: "LondonMN";
+    font-size: 17px;
+
+    outline: none;
+
+    resize: none;
+}
+
+.campo input:focus,
+.campo-textarea textarea:focus {
+    outline: 2px solid var(--branco-gamiai);
+}
+
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    font-family: "LondonMN";
+    font-size: 17px;
+    font-weight: 600;
+
+    color: white;
+    background-color: var(--roxo-gamiai);
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    transition: background-color 500ms ease;
+}
+
+#contato form button:hover {
+    background-color: #300886;
+}
