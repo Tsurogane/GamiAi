@@ -90,6 +90,8 @@ header img {
     align-items: center;
 }
 
+
+
 #sobre {
     height: 800px;
 
@@ -424,15 +426,13 @@ footer .container-grid {
     header button {
         width: 50px;
 
-        display: none;
-
         background: none;
         border: none;
 
     }
 
     header svg {
-        fill: rgb(255, 0, 0);
+        fill: rgb(255, 255, 255);
     }
 
     nav.menu {
@@ -713,4 +713,32 @@ footer .container-grid {
     footer img {
         width: 200px;
     }
+}
+    @media screen and (max-width: 320px) {
+        header img {
+            width: 120px;
+        }
+    
+        header svg {
+            width: 40px;
+        }
+        
+        .card {
+            flex-basis: 65%;
+        }
+    
+        #portfolio p {
+            font-size: 15px;
+        }
+    
+        #portfolio button {
+            width: 40%;
+            height: 45px;
+        
+            margin-left: 75px;
+        }
+    
+        footer img {
+            width: 200px;
+        }
 }
