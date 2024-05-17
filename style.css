@@ -418,9 +418,18 @@ footer .container-grid {
     color: #300886;
 }
 
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras {
+    display: none;
+}
+
 @media screen and (max-width: 1300px){
     header {
         position: relative;
+        
     }
 
     header button {
@@ -474,6 +483,10 @@ footer .container-grid {
 }
 
 @media screen and (max-width: 1080px) {
+    .banner {
+        background-position: 100%;
+    }
+    
     .container-cards {
         flex-wrap: wrap;
     }
@@ -523,6 +536,10 @@ footer .container-grid {
 }
 
 @media screen and (max-width: 800px) {
+    .banner {
+        background-position: 100%;
+    }
+
     .card {
         flex-basis: 42%;
     }
@@ -544,6 +561,10 @@ footer .container-grid {
 }
 
 @media screen and (max-width: 700px) {
+    .banner {
+        background-position: 100%;
+    }
+    
     #sobre {
         height: unset;
         margin-bottom: 40px;
@@ -592,6 +613,10 @@ footer .container-grid {
 }
 
 @media screen and (max-width: 520px) {
+    .banner {
+        background-position: 100%;
+    }
+    
     .container-grid {
         width: 90%;
     }
@@ -683,6 +708,10 @@ footer .container-grid {
 }
 
 @media screen and (max-width: 400px) {
+    .banner {
+        background-position: 100%;
+    }
+    
     header img {
         width: 160px;
     }
@@ -715,6 +744,10 @@ footer .container-grid {
     }
 }
     @media screen and (max-width: 320px) {
+        .banner {
+            background-position: 100%;
+        }
+        
         header img {
             width: 120px;
         }
